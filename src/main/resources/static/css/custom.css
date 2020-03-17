@@ -1,0 +1,55 @@
+/*body {
+    background-color: lightblue;
+}*/
+
+.table th {
+     text-align: center;
+     padding-right: 65px;
+ }
+
+ .table td {
+     text-align: center;
+     padding-right: 65px;
+ }
+ table, th, td {
+   border: 1px solid black;
+ }
+ th, td {
+   padding: 15px;
+   text-align: center;
+ }
+ tr:hover {background-color: #2f89a4;}
+ th {
+   background-color: #4CAF50;
+   color: white;
+ }
+ .total {
+    background-color: aqua;
+    height: 135px;
+     width: 33%;
+    padding: 24px;
+    margin: 0px auto;
+    float: left;
+     }
+ .total1 {
+    background-color: aqua;
+    height: 135px;
+    width: 33%;
+    margin: 0px auto;
+    padding: 24px;
+ }
+ .total2 {
+        background-color: aqua;
+        height: 135px;
+        width: 33%;
+        margin: 0px auto;
+        float: right;
+        margin-top: -135px;
+        padding: 24px;
+ }
+ .word {
+ font-size: large;
+ }
+ .cont {
+        margin-bottom: 7px;
+ }
