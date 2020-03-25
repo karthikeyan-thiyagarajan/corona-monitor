@@ -1,7 +1,4 @@
-
 package com.corana.Response;
-
-import javax.annotation.Generated;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

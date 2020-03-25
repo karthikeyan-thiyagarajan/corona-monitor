@@ -1,7 +1,5 @@
-
 package com.corana.Response;
 
-import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
 
 @SuppressWarnings("unused")
