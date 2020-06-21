@@ -5,7 +5,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=yes" name="viewport">
     <title>Corona Monitor</title>
     <!-- plugins:css -->
     <link href="vendors/ti-icons/css/themify-icons.css" rel="stylesheet">
@@ -21,11 +21,13 @@
 <body>
 <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <nav class="navbar col-md-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo mr-5" href="index.html"><img alt="logo" class="mr-2"
-                                                                           src="images/logo.png"/></a>
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img alt="logo" src="images/logo-mini.png"/></a>
+            <a class="navbar-brand brand-logo mr-5" href="https://github.com/karthikeyan-thiyagarajan"><img alt="logo"
+                                                                                                            class="mr-2"
+                                                                                                            src="images/logo.png"/></a>
+            <a class="navbar-brand brand-logo-mini" href="https://github.com/karthikeyan-thiyagarajan"><img alt="logo"
+                                                                                                            src="images/logo-mini.png"/></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end"
              style="background-color: #343f53;">
@@ -103,8 +105,8 @@
                 <div class="sub-headings">
                     <h4>Overall Cases : </h4>
                 </div>
-                <div class="row" style="margin-right: -367px;">
-                    <div class="col-md-3 grid-margin stretch-card">
+                <div class="row">
+                    <div class="col-md-4 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-title text-md-center text-xl-left">Total Cases</p>
@@ -116,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 grid-margin stretch-card">
+                    <div class="col-md-4 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-title text-md-center text-xl-left">Total Deaths</p>
@@ -129,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 grid-margin stretch-card">
+                    <div class="col-md-4 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-title text-md-center text-xl-left">Total Recovered</p>
@@ -146,8 +148,8 @@
                 <div class="sub-headings">
                     <h4>India Cases : </h4>
                 </div>
-                <div class="row" style="margin-right: -367px;">
-                    <div class="col-md-3 grid-margin stretch-card">
+                <div class="row">
+                    <div class="col-md-4 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-title text-md-center text-xl-left">Total Cases</p>
@@ -159,7 +161,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 grid-margin stretch-card">
+                    <div class="col-md-4 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-title text-md-center text-xl-left">Total Deaths</p>
@@ -172,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 grid-margin stretch-card">
+                    <div class="col-md-4 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-title text-md-center text-xl-left">Total Recovered</p>
@@ -228,10 +230,10 @@
                             <div class="card-body">
                                 <p class="card-title">Detailed Reports</p>
                                 <div class="row">
-                                    <div class="col-md-12 col-xl-9">
-                                        <div class="row" style="width:1018px">
-                                            <div class="col-md-6 col-xl-7">
-                                                <div class="table-responsive mb-3 mb-md-0">
+                                    <div class="col-md-12 col-xl-12">
+                                        <div class="row">
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="table-responsive mb-10 mb-md-0">
                                                     <table class="table table-borderless report-table">
                                                         <thead>
                                                         <tr style="color: burlywood;">
