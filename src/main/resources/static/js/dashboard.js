@@ -40,7 +40,7 @@
               ticks: {
                 display: false,
                 min: 0,
-                max: 500
+                max: parseInt($("#tot-case").html().trim())
               }
             }],
             xAxes: [{
@@ -57,7 +57,7 @@
             }]
           },
           legend: {
-            display: false
+            display: true
           },
           elements: {
             point: {

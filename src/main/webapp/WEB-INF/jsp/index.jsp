@@ -233,6 +233,7 @@
                                             <div class="col-md-6 col-xl-7">
                                                 <div class="table-responsive mb-3 mb-md-0">
                                                     <table class="table table-borderless report-table">
+                                                        <thead>
                                                         <tr style="color: burlywood;">
                                                             <th>Country</th>
                                                             <th>Cases</th>
@@ -242,8 +243,10 @@
                                                             <th>Today Deaths</th>
                                                             <th>Critical</th>
                                                         </tr>
+                                                        </thead>
+                                                        <tbody>
                                                         <c:forEach items="${responses}" var="res">
-                                                            <tr style="    color: teal;">
+                                                            <tr style="color: teal;">
                                                                 <td class="text-muted">
                                                                     <c:out value="${res.country}"/>
                                                                 </td>
@@ -288,6 +291,7 @@
                                                                 </td>
                                                             </tr>
                                                         </c:forEach>
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -303,6 +307,7 @@
             <!-- partial:partials/_footer.html -->
             <footer class="footer">
                 <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span></span>
                     <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Karthikeyan Thiyagarajan <i
                             class="ti-heart text-danger ml-1"></i></span>
                 </div>

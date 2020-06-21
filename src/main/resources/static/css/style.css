@@ -20327,7 +20327,7 @@ dl li {
   border-top: 0;
   border-bottom-width: 1px;
   font-weight: bold;
-  font-size: .875rem;
+  font-size: 17px;
 }
 
 .table thead th i {
@@ -20339,6 +20339,10 @@ dl li {
   vertical-align: middle;
   line-height: 1;
   white-space: nowrap;
+}
+
+.table tbody tr:hover {
+  background-color:black;
 }
 
 .table td {
