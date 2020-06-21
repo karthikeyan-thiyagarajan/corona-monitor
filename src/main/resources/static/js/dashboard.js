@@ -120,7 +120,7 @@
               ctx = chart.chart.ctx;
       
           ctx.restore();
-          var fontSize = 3.125;
+          var fontSize = 1.500;
           ctx.font = "600 " + fontSize + "em sans-serif";
           ctx.textBaseline = "middle";
           ctx.fillStyle = "#000";

@@ -30,13 +30,14 @@ public class MonitorController {
         headers.add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 
-        ResponseEntity<Response[]> exchange = restTemplate.exchange(new URI("https://corona.lmao.ninja/countries"), HttpMethod.GET, entity, Response[].class);
-        ResponseEntity<Total> exchange1 = restTemplate.exchange(new URI("https://corona.lmao.ninja/all"), HttpMethod.GET, entity, Total.class);
-        ResponseEntity<India> exchange2 = restTemplate.exchange(new URI("https://corona.lmao.ninja/countries/india"), HttpMethod.GET, entity, India.class);
+        ResponseEntity<Response[]> exchange = restTemplate.exchange(new URI("https://corona.lmao.ninja/v2/countries"), HttpMethod.GET, entity, Response[].class);
+        ResponseEntity<Total> exchange1 = restTemplate.exchange(new URI("https://corona.lmao.ninja/v2/all"), HttpMethod.GET, entity, Total.class);
+        ResponseEntity<India> exchange2 = restTemplate.exchange(new URI("https://corona.lmao.ninja/v2/countries/india"), HttpMethod.GET, entity, India.class);
 
         List<Response> responses = Arrays.asList(exchange.getBody());
         request.setAttribute("responses", responses);
         request.setAttribute("total", exchange1.getBody());
+        System.out.println("exchange2 = " + exchange2.getBody());
         request.setAttribute("india", exchange2.getBody());
         return "index";
 

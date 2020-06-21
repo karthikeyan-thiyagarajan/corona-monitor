@@ -1,5 +1,6 @@
 package com.corana.Response;
 
+import com.google.gson.Gson;
 import com.google.gson.annotations.Expose;
 
 import javax.annotation.Generated;
@@ -99,4 +100,8 @@ public class India {
         this.todayDeaths = todayDeaths;
     }
 
+    @Override
+    public String toString() {
+        return new Gson().toJson(this);
+    }
 }
