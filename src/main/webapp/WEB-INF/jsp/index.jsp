@@ -1,5 +1,6 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" import="com.corana.*,com.corana.Response.DistrictDatum"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <html lang="en">
 
 <head>
@@ -82,12 +83,15 @@
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background-color: #343f53;">
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">
-                        <i class="ti-shield menu-icon"></i>
-                        <span class="menu-title">Dashboard</span>
-                    </a>
-                </li>
+                <h4>TamilNadu Districts</h4>
+                <c:forEach items="${tnStates}" var="districtData">
+                    <li class="nav-item ${districtData.zone}" title='<c:out value="${districtData.name}" />'>
+                        <a class="nav-link" href="#">
+                            <span class="menu-title"> ${districtData.id} - ${districtData.confirmed}</span>
+                            <!--                        <p><c:out value="${districtData.name}" /></p>-->
+                        </a>
+                    </li>
+                </c:forEach>
             </ul>
         </nav>
         <!-- partial -->

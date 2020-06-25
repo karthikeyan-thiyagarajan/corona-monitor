@@ -21375,3 +21375,15 @@ dl li {
     padding: 16px 11px;
     color: #fff;
 }
+.RED {
+    background-color:#b5141c;
+    color:white !important;
+}
+.ORANGE {
+    background-color:#ff9900;
+    color:white !important;
+}
+.GREEN {
+    background-color:#28e448;
+    color:white !important;
+}
